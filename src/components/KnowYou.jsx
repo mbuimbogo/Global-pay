@@ -3,7 +3,7 @@ import image from "../assets/images/image.jpeg";
 
 export default function KnowYou() {
   return (
-    <div className="flex">
+    <div className="flex flex-col md:flex-row">
       <div className="flex justify-center items-center mt-2 sm:justify-start">
         <img
           src={image}
@@ -12,12 +12,12 @@ export default function KnowYou() {
           className="sm:w-[480px] object-cover"
         />
       </div>
-      <div className="ml-32 mt-7">
+      <div className="lg:ml-32 md:ml-5 ml-2 mt-7">
         <h1 className="font-bold text-3xl">Personal Information</h1>
         <p className="mt-1">Help us learn a bit more about you</p>
         <div className="">
-          <form className="flex space-x-7 mt-12">
-            <div className="space-y-2 flex flex-col ">
+          <form className="flex flex-col md:flex-row space-x-7 mt-12 ml-0">
+            <div className="space-y-2 flex flex-col">
               <input
                 className="h-10 border-b"
                 type="text"
@@ -47,7 +47,7 @@ export default function KnowYou() {
                 value={name}
               />
             </div>
-            <div className="space-y-2 flex flex-col">
+            <div className="space-y-2 flex flex-col mt-2 ">
               <input
                 className="h-10 border-b"
                 type="text"
